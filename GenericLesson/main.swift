@@ -208,6 +208,7 @@ struct GenericWeight <T: Weightable> {
     mutating func push(_ element: T) {
         elements.append(element)
     }
+    
     mutating func removeQueue() -> T? {
         guard elements.count > 0 else { return nil }
         return elements.removeFirst()
